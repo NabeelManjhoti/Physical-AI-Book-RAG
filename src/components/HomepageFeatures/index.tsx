@@ -5,50 +5,59 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Embodied Intelligence',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Learn how AI systems can be embodied in robotic platforms to create
+        intelligent agents that interact with the physical world through
+        perception, reasoning, and action.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Modern Robotics Stack',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Master the complete robotics development stack: ROS 2 for communication,
+        Gazebo/Unity for simulation, NVIDIA Isaac for GPU-accelerated perception,
+        and VLA models for intelligent planning.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Practical Applications',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Build humanoid robots that can understand natural language commands,
+        navigate complex environments, manipulate objects, and operate safely
+        in dynamic real-world scenarios.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
       <div className="text--center padding-horiz--md">
+        <div className={styles.featureIcon}>
+          <svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" fill="url(#gradient)" opacity="0.1"/>
+            <path d="M30,30 L70,30 L60,50 L70,70 L30,70 L40,50 Z" fill="var(--ifm-color-primary)" stroke="var(--ifm-color-primary-light)" strokeWidth="2"/>
+            <circle cx="50" cy="50" r="15" fill="none" stroke="var(--ifm-color-primary-light)" strokeWidth="2" strokeDasharray="3,3"/>
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="var(--ifm-color-primary)"/>
+                <stop offset="100%" stopColor="var(--ifm-color-primary-darker)"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>

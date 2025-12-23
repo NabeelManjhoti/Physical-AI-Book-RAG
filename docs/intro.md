@@ -2,46 +2,32 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Physical AI & Humanoid Robotics Textbook
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the comprehensive textbook on **Physical AI & Humanoid Robotics** - an authoritative resource that bridges the gap between artificial intelligence and embodied systems. This textbook explores the theoretical foundations and practical implementations of AI systems that interact with the physical world through robotic platforms.
 
-## Getting Started
+## About This Textbook
 
-Get started by **creating a new site**.
+This textbook is designed for students, researchers, and engineers who want to understand the intersection of artificial intelligence and robotics. It covers the essential technologies and concepts needed to build intelligent, embodied systems that can perceive, reason, and act in the physical world.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Course Structure
 
-### What you'll need
+The content is organized into a quarter overview followed by four comprehensive modules and a capstone project:
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- **Quarter Overview**: Introduction to Physical AI concepts and course structure
+- **Module 1**: ROS 2 - Robot Operating System fundamentals (nodes, topics, services, rclpy, URDF)
+- **Module 2**: Gazebo & Unity - Physics simulation and sensor integration
+- **Module 3**: NVIDIA Isaac - GPU-accelerated perception and control with Isaac Sim, ROS, and Nav2
+- **Module 4**: Vision-Language-Action (VLA) Models - Using Whisper and LLMs for robotic planning
+- **Capstone Project**: Integration of all concepts in a practical humanoid robotics application
 
-## Generate a new site
+## Learning Objectives
 
-Generate a new Docusaurus site using the **classic template**.
+By the end of this textbook, you will be able to:
+- Design and implement robotic systems using ROS 2
+- Create physics-based simulations with Gazebo and Unity
+- Leverage NVIDIA Isaac for advanced perception and control
+- Apply VLA models for intelligent robotic planning
+- Integrate all components in a complete humanoid robotics system
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Start your journey by exploring the [Quarter Overview](./overview/intro) or dive directly into [Module 1: ROS 2](./module1/intro).

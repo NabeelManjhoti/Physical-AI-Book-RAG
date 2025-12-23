@@ -8,6 +8,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, #0a0a0a 0%, #0f2027 100%);
+  border-bottom: 1px solid rgba(0, 180, 216, 0.3);
 }
 
 @media screen and (max-width: 996px) {
@@ -16,8 +18,57 @@
   }
 }
 
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 576px) {
+  .buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.features {
+  padding: 4rem 0;
+  background: var(--ifm-background-color);
+}
+
+.features h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+}
+
+.features p {
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Futuristic grid animation */
+.features::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    linear-gradient(rgba(0, 180, 216, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 180, 216, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.features > .container {
+  position: relative;
+  z-index: 2;
 }
