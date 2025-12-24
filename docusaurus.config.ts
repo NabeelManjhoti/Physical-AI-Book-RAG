@@ -18,8 +18,7 @@ const config: Config = {
   url: 'https://physical-ai-book-rag.vercel.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
-  trailingSlash: false,
+  baseUrl: "",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
