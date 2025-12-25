@@ -17,12 +17,10 @@ const config: Config = {
   // Set the production url of your site here
   url: 'https://physical-ai-book-rag.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For Vercel deployment, keep as '/'
+  // For Vercel deployment to root, use '/'
   baseUrl: '/',
 
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'NabeelManjhoti', // Usually your GitHub org/user name.
   projectName: 'physical-ai-book-rag', // Usually your repo name.
   deploymentBranch: 'gh-pages',
